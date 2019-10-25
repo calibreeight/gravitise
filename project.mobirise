@@ -59,9 +59,9 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
-        "header_custom": "",
+        "title": "Gravitise - Australian SEO Company",
+        "meta_descr": "Gravitise is Australia's leading SEO company. We help you get more traffic and business.",
+        "header_custom": "<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">",
         "footer_custom": "",
         "html_before": ""
       },
