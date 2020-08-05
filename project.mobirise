@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Gravitise v2",
-    "currentPage": "go-salary.html",
+    "currentPage": "gosalary.html",
     "theme": {
       "name": "trainingamp",
       "title": "TrainingAMP",
@@ -48,7 +48,7 @@
         "url": "https://fonts.googleapis.com/css?family=Red+Hat+Text:400,400i,500,500i,700,700i"
       }
     ],
-    "uniqCompNum": 23,
+    "uniqCompNum": 27,
     "versionPublish": "4.12.3",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/screen-shot-2019-10-25-at-1.19.45-pm-80x77.png",
@@ -861,7 +861,7 @@
             }
           },
           "_name": "footer3",
-          "_customHTML": "<section class=\"Footers3\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <!--  -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <!--  -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2ca438\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"copyright mbr-flex mbr-jc-c\">\n            <p class=\"mbr-text mbr-fonts-style mbr-regular mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright .mbr-text\" data-app-placeholder=\"Type Text\">© Copyright <span mbr-link-type=\"year\">2020 Gravitise - Melbourne, Sydney, Brisbane</span></p>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"Footers3\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <!--  -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <!--  -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2ca438\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"copyright mbr-flex mbr-jc-c\">\n            <p class=\"mbr-text mbr-fonts-style mbr-regular mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright .mbr-text\" data-app-placeholder=\"Type Text\">© Copyright GO Salary Packaging Pty Ltd - Privacy - Need Help? Ask Amy<br></p>\n        </div>\n    </div>\n</section>",
           "_cid": "rFR1N9vZwS",
           "_anchor": "footer3-i",
           "_protectedParams": [],
@@ -871,12 +871,12 @@
         }
       ]
     },
-    "go-salary.html": {
+    "gosalary.html": {
       "settings": {
         "title": "Not For Profit Salary Packaging & Salary Sacrifice - GO Salary",
         "order": 1,
         "meta_descr": "GO Salary is Australia’s leading salary packaging and salary sacrifice provider for Not For Profit organisations. Call 1300 043 846",
-        "header_custom": ""
+        "header_custom": "<META NAME=\"ROBOTS\" CONTENT=\"NOINDEX, NOFOLLOW\">"
       },
       "components": [
         {
@@ -989,87 +989,57 @@
           "_name": "menu1",
           "_customHTML": "<section class=\"menu1 menu horizontal-menu\" group=\"Menu\" plugins=\"DropDown, amp-main, amp-sidebar\" always-top=\"\" global=\"\" once=\"menu\">\n\t<mbr-parameters>\n\t\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t\t<!--  -->\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"checkbox\" title=\"Sticky Position\" name=\"sticky\" checked=\"\">\n\t\t<!--  -->\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Show Logo\" name=\"showLogo\">\n\t\t<input type=\"checkbox\" title=\"Show Brand Name\" name=\"showBrand\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Menu Items\" name=\"showItems\" checked=\"\">\n\t\t<input type=\"checkbox\" title=\"Show Button(s)\" name=\"showButtons\" checked=\"\">\n\t\t<input type=\"range\" inline=\"\" title=\"Icons Count\" name=\"socialCount\" min=\"1\" max=\"6\" value=\"2\" step=\"1\" condition=\"showSocial\">\n\t\t<header>Sidebar</header>\n\t\t<select title=\"Side\" name=\"sidebarSide\">\n\t\t\t<option value=\"left\">Left</option>\n\t\t\t<option value=\"right\" selected=\"\">Right</option>\n\t\t</select>\n\t\t<input type=\"color\" title=\"Hamburger Color\" name=\"hamburgerColor\" value=\"#232323\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Background Color\" name=\"menuBgColor\" value=\"#efefef\" required=\"\">\n\t\t<!-- End block parameters -->\n\t</mbr-parameters>\n\t<!-- <div class=\"menu-wrapper\"> -->\n\t<nav class=\"navbar navbar-dropdown navbar-expand-lg\" mbr-class=\"{'navbar-fixed-top': sticky}\">\n\t\t<div class=\"menu-container\" mbr-class=\"{'container': !fullWidth,\n\t\t\t\t\t\t'container-fluid': fullWidth,\n\t\t\t\t\t\t'mbr-jc-e': !showLogo &amp;&amp; !showBrand}\">\n\t\t\t<!-- SHOW LOGO -->\n\t\t\t<div class=\"navbar-brand\" mbr-if=\"showLogo || showBrand\">\n\t\t\t\t<div mbr-if=\"showLogo\" class=\"navbar-logo\">\n\t\t\t\t\t<amp-img src=\"@PROJECT_PATH@/assets/images/gravitise-new-logo-120x103.png\" layout=\"responsive\" height=\"50\" width=\"58.252427184466015\" alt=\"image\" class=\"placeholder-loader\">\n\t\t\t\t\t\t<div placeholder=\"\" class=\"placeholder\"></div>\n\t\t\t\t\t\t<img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/gravitise-new-logo-120x103.png\" alt=\"\" title=\"\">\n\t\t\t\t\t</amp-img>\n\t\t\t\t</div>\n\t\t\t\t<span mbr-if=\"showBrand\" mbr-buttons=\"\" mbr-theme-style=\"display-4\" class=\"navbar-caption-wrap\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove\"><a class=\"navbar-caption mbr-semibold text-black\" data-app-selector=\".navbar-caption\" href=\"#top\" data-app-placeholder=\"Type Text\">GRAVITISE</a></span>\n\t\t\t</div>\n\t\t\t<!-- SHOW LOGO END -->\n\t\t\t<!-- COLLAPSED MENU -->\n\t\t\t<div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n\t\t\t\t<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t\t<span></span>\n\t\t\t\t\t</div>\n\t\t\t\t</button>\n\t\t\t\t<!-- NAVBAR ITEMS -->\n\t\t\t\t<ul mbr-menu=\"\" class=\"navbar-nav nav-dropdown\" mbr-theme-style=\"display-5\" mbr-if=\"showItems\" mbr-class=\"{'nav-right': !showButtons,'navbar-nav-top-padding': isPublish &amp;&amp; !showBrand &amp;&amp; !showLogo}\"><li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"index.html#features5-4\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">About</a>\n\t\t\t\t\t</li>\n\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"index.html#content5-b\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\" aria-expanded=\"false\">Why Us?</a>\n\t\t\t\t\t</li>\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"index.html#testimonials1-e\" data-app-selector=\".nav-link,.dropdown-item\" aria-expanded=\"false\" data-app-placeholder=\"Type Text\">Testimonials</a>\n\n\t\t\t\t\t</li>\n\n\n\t\t\t\t\t<li class=\"nav-item\">\n\t\t\t\t\t\t<a class=\"nav-link link text-black\" href=\"tel:1300770997\" data-app-selector=\".nav-link,.dropdown-item\" data-app-placeholder=\"Type Text\">1300 770 997</a>\n\t\t\t\t\t</li></ul>\n\t\t\t\t<!-- NAVBAR ITEMS END -->\n\t\t\t\t<!-- SHOW BUTTON -->\n\t\t\t\t<div mbr-if=\"showButtons\" mbr-buttons=\"\" mbr-theme-style=\"display-7\" class=\"navbar-buttons mbr-section-btn\"><a class=\"btn btn-md mbr-semibold btn-primary\" href=\"index.html#form1-d\" data-app-placeholder=\"Type Text\">Contact Us</a></div>\n\t\t\t\t<!-- SHOW BUTTON END -->\n\t\t\t</div>\n\t\t\t<!-- COLLAPSED MENU END -->\n\t\t\t<button class=\"navbar-toggler hide\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarNavAltMarkup\" aria-expanded=\"false\" aria-label=\"Toggle navigation\" mbr-if=\"showItems || showSocial || showButtons\">\n\t\t\t\t<div class=\"hamburger\">\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t\t<span></span>\n\t\t\t\t</div>\n\t\t\t</button>\n\t\t\t<button on=\"tap:sidebar.toggle\" class=\"ampstart-btn hamburger\" mbr-if=\"(showItems||showButtons)\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</nav>\n\t<!-- AMP plug -->\n\t<amp-sidebar id=\"sidebar\" layout=\"nodisplay\" side=\"{{sidebarSide}}\">\n\t\t<div class=\"builder-sidebar\" id=\"builder-sidebar\">\n\t\t\t<button on=\"tap:sidebar.close\" class=\"close-sidebar\">\n\t\t\t\t<span></span>\n\t\t\t\t<span></span>\n\t\t\t</button>\n\t\t</div>\n\t</amp-sidebar>\n\t<!-- </div> -->\n</section>",
           "_cid": "rFNbqnoH3x",
-          "_anchor": "menu1-j",
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
-          "_params": {}
+          "_params": {},
+          "_anchor": "menu1-n"
         },
         {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)",
+              "& when (@overlay)": {
+                ".mbr-overlay": {
+                  "background": "@overlayColor",
+                  "opacity": "@overlayOpacity"
+                }
+              }
+            },
             "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            ".item": {
-              "position": "relative",
-              "&:before": {
-                "content": "''",
-                "position": "absolute",
-                "right": "0rem",
-                "top": "0.7rem",
-                "width": "2px",
-                "height": "40px",
-                "background-color": "@primaryColor",
-                "transform": "rotate(20deg)"
-              }
-            },
-            "a": {
-              "&:hover": {
-                "color": "@primaryColor !important"
-              }
-            },
-            "p": {
-              "padding-top": "1rem",
-              "border-top": "2px solid transparent",
-              "border-bottom": "2px solid transparent",
-              "transition": "all 0.3s",
-              "&:hover": {
-                "border-top": "2px solid @primaryColor",
-                "border-bottom": "2px solid @primaryColor"
-              }
-            },
-            ".item-1": {
-              "&:after": {
-                "content": "''",
-                "position": "absolute",
-                "left": "0rem",
-                "top": "0.7rem",
-                "width": "2px",
-                "height": "40px",
-                "background-color": "@primaryColor",
-                "transform": "rotate(20deg)"
-              }
-            },
-            ".mbr-text": {
+            ".mbr-section-title": {
               "color": "#000f36"
             },
-            "@media (max-width: 767px)": {
-              ".item": {
-                "&:before": {
-                  "content": "none"
-                }
-              },
-              ".item-1": {
-                "&:after": {
-                  "content": "none"
-                }
-              }
+            ".container-fluid": {
+              "padding": "0"
+            },
+            ".content": {
+              "max-width": "800px",
+              "margin": "auto"
+            },
+            ".mbr-section-btn, .mbr-text": {
+              "color": "#000f36"
+            },
+            "amp-img, img": {
+              "object-fit": "cover",
+              "height": "100%"
+            },
+            ".img-col": {
+              "padding": "0"
+            },
+            ".image-block": {
+              "height": "100%"
             }
           },
-          "_name": "info2",
-          "_customHTML": "<section class=\"info2\" group=\"Info\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <!--  -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <!--  -->\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Items\" name=\"items\" min=\"1\" max=\"5\" step=\"1\" value=\"2\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"mbr-row mbr-jc-c\">\n            <div class=\"item item-1 mbr-col-lg-2 mbr-col-md-4 mbr-col-sm-12\" mbr-if=\"items > 0\">\n                <p class=\"mbr-text mbr-fonts-style mbr-semibold mbr-white align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\"><a href=\"#\" class=\"text-secondary\">MEMBER LOG IN</a></p>\n            </div>\n            <div class=\"item mbr-col-lg-2 mbr-col-md-4 mbr-col-sm-12\" mbr-if=\"items > 1\">\n                <p class=\"mbr-text mbr-fonts-style mbr-semibold mbr-white align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\"><a href=\"#\" class=\"text-secondary\">NEW MEMBER - JOIN NOW</a></p>\n            </div>\n            <div class=\"item mbr-col-lg-2 mbr-col-md-4 mbr-col-sm-12\" mbr-if=\"items > 2\">\n                <p class=\"mbr-text mbr-fonts-style mbr-semibold mbr-white align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\"><a href=\"#\" class=\"text-secondary\">TRAINING</a></p>\n            </div>\n            <div class=\"item mbr-col-lg-2 mbr-col-md-4 mbr-col-sm-12\" mbr-if=\"items > 3\">\n                <p class=\"mbr-text mbr-fonts-style mbr-semibold mbr-white align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\"><a href=\"#\" class=\"text-secondary\">INVEST</a></p>\n            </div>\n            <div class=\"item mbr-col-lg-2 mbr-col-md-4 mbr-col-sm-12\" mbr-if=\"items > 4\">\n                <p class=\"mbr-text mbr-fonts-style mbr-semibold mbr-white align-center\" mbr-theme-style=\"display-5\" data-app-selector=\".mbr-text\" data-app-placeholder=\"Type Text\"><a href=\"#\" class=\"text-secondary\">BE\n                        STRONG</a></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s6ibl4ZS6m",
-          "_anchor": "info2-m",
+          "_name": "header2",
+          "_customHTML": "<section class=\"header2\" group=\"Headers\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-m-auto mbr-col-lg-6\">\n                <div class=\"content mbr-p-4\">\n                    <h1 class=\"mbr-section-title align-left mbr-fonts-style mbr-pb-2 mbr-semibold\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">Salary Packaging - Let's GO!</h1>\n                    <p class=\"mbr-text align-left mbr-regular mbr-pb-5 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-section-btn, .mbr-text\">Lorem\n                        ipsum dolor sit amet, consectetur adipiscing elit. Cras pellentesque congue mi nec lobortis. Sed\n                        placerat lobortis vestibulum. Suspendisse potenti.</p>\n\n                    <div class=\"mbr-section-btn align-left\" mbr-if=\"showButtons\" mbr-buttons=\"true\" mbr-theme-style=\"display-7\"><a class=\"btn btn-lg btn-primary\" data-app-placeholder=\"Type Text\">MEMBER LOG IN</a> <a class=\"btn btn-lg btn-secondary\" data-app-placeholder=\"Type Text\">NEW MEMBER - JOIN NOW</a></div>\n\n                </div>\n            </div>\n\n\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 img-col mbr-col-lg-6\">\n                <div class=\"image-block\">\n                    <amp-img src=\"@PROJECT_PATH@/assets/images/01.jpg\" layout=\"responsive\" width=\"976.25\" height=\"781\" alt=\"image\" class=\"placeholder-loader\">\n                        <div placeholder class=\"placeholder\"></div>\n                        <a href=\"#\"><img class=\"mbr-temp\" src=\"@PROJECT_PATH@/assets/images/01.jpg\" alt title></a>\n                    </amp-img>\n                </div>\n            </div>\n\n        </div>\n\n\n\n\n\n\n\n    </div>\n</section>",
+          "_cid": "s6KhL1ufru",
+          "_anchor": "header2-p",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
@@ -1095,28 +1065,23 @@
             ".mbr-section-title": {
               "color": "#000f36"
             },
-            ".content": {
-              "max-width": "800px",
-              "margin": "auto"
+            ".mbr-text3": {
+              "text-decoration": "underline",
+              "color": "#2ca438"
             },
-            ".mbr-text": {
-              "color": "#000f36"
-            },
-            ".image-block": {
-              "height": "100%"
-            },
-            ".mbr-section-sub-title": {
-              "color": "#000f36"
+            "h1": {
+              "color": "#2ca438",
+              "border-bottom": "6px solid @border"
             }
           },
-          "_name": "testimonials1",
-          "_customHTML": "<section class=\"Testimonials1\" group=\"Testimonials\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Name\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#efefef\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-m-auto mbr-col-lg-6\">\n                <div class=\"content mbr-p-4\">\n                    <h2 class=\"mbr-section-sub-title align-left mbr-fonts-style mbr-pb-4\" mbr-if=\"showTitle\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-section-sub-title\">Salary Packaging - Let's GO!</h2>\n                    <p class=\"mbr-text align-left mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text\">GO Salary is Australia’s most innovative, professional salary packaging service provider.<br><br>We specialise in FBT exempt employers, in the health, community, disability, charity, aged care sectors as well as research institutes. More than anyone else, we understand better your salary packaging requirements and how to deliver this service with our member in mind.<br><br>We define ourselves as a service business. We are driven to provide our clients and their employees with the most professional, member-focused service, this motivates us every day. We pride ourselves on delivering the best service in our industry.<br><br>We have also added a secret ingredient to our service and that is innovation. Whilst our competitors languish with legacy systems developed decades ago, the GO Salary system uses the latest technology and software features. Can you imagine banking without internet banking? That is what our competitors offer today. GO Salary offers Australia’s only ‘open system’ salary packaging<br>service, where employers and employees manage their own salary package. It is truly innovative. <br><br>Please contact Go Salary Directors, Tony, and Ben. With over 35 years combined salary packaging experience, it is a call you will celebrate. Please contact us.<br><br>© Copyright GO Salary Packaging Pty Ltd - Privacy - Need Help? Ask Amy<br></p>\n                </div>\n            </div>\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 img-col mbr-col-lg-6\">\n                <div class=\"content mbr-p-4\">\n                    <h1 class=\"mbr-section-title align-left mbr-fonts-style mbr-pt-4 mbr-semibold\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\">About Us</h1>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "s6iaSeQH6G",
-          "_anchor": "testimonials1-l",
+          "_name": "content1",
+          "_customHTML": "<section class=\"Content1\" group=\"Content\" plugins=\"amp-main\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"15\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"15\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText2\" checked>\n        <input type=\"checkbox\" title=\"Link\" name=\"showText3\">\n        <header>Color</header>\n        <input type=\"color\" name=\"border\" title=\"Border Color\" value=\"#efefef\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" required>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div mbr-class=\"{'container':!fullWidth,\n                     'container-fluid': fullWidth}\">\n        <div class=\"mbr-row\">\n            <div class=\"mbr-col-sm-12 mbr-col-md-12 mbr-m-auto mbr-col-lg-12\">\n                <div class=\"content\">\n                    <h1 class=\"mbr-section-title align-left mbr-fonts-style mbr-pb-1 mbr-semibold\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\" data-app-selector=\".mbr-section-title\">GO Salary is Australia’s most innovative, professional, salary packaging service.  So, Let’s GO!</h1>\n\n                    <p class=\"mbr-text2 align-left mbr-regular mbr-pt-5 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText2\" data-app-selector=\".mbr-text2\">GO Salary specialises in not-for-profits in the health, disability &amp; community services, charitable and aged care sectors, as well as medical research institutes.  More than anyone else, we understand better the salary packaging requirements of FBT exempt employers and how to deliver this service to your valued employees.\n<br><br>GO Salary defines itself as a service business.  Our benchmark is service excellence – nothing less.  We are motivated every day to provide our clients and their employees the most professional, customer-focused service we can deliver.  We are obviously very proud of our efforts and results.\n<br><br>We have also added a ‘secret’ ingredient to our service.  Innovation.  Whilst our competitors languish with legacy systems developed a decade ago, the GO Salary system uses the latest technology and software features.  Can you imagine banking without internet banking?  That is what our competitors offer today.  GO Salary has developed Australia’s only ‘open system’ salary packaging system, where employers and employees can manage their own salary package.  It is truly innovative.  We have received government R&amp;D grants to prove it!\n<br><br>We would like to share our experience with you.  Please contact GO Salary Directors Tony or Ben.  With over 35 years of salary packaging experience, it is a call you will celebrate.  Please contact us on (03) 9955 7380.&nbsp;<br></p>\n                    <p class=\"mbr-text3 mbr-pt-4 align-left mbr-regular mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText3\" data-app-selector=\".mbr-text3\"><a href=\"#\" class=\"text-primary\">read more\n                            &gt;</a></p>\n\n\n\n\n                </div>\n            </div>\n\n\n\n\n        </div>\n\n\n\n\n\n\n\n    </div>\n</section>",
+          "_cid": "s6KibewhZi",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
-          "_params": {}
+          "_params": {},
+          "_anchor": "content1-q"
         },
         {
           "alias": false,
@@ -1135,13 +1100,13 @@
             }
           },
           "_name": "footer3",
-          "_customHTML": "<section class=\"Footers3\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <!--  -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <!--  -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2ca438\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"copyright mbr-flex mbr-jc-c\">\n            <p class=\"mbr-text mbr-fonts-style mbr-regular mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright .mbr-text\" data-app-placeholder=\"Type Text\">© Copyright <span mbr-link-type=\"year\">2020 Gravitise - Melbourne, Sydney, Brisbane</span></p>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"Footers3\" group=\"Footers\" plugins=\"amp-main\" global once=\"footer\">\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <!--  -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <!--  -->\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#2ca438\" selected>\n        </fieldset>\n        <!--  -->\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type!='color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n        <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"bg.type!='color' && overlay\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\"></div>\n    <div class=\"container\">\n        <div class=\"copyright mbr-flex mbr-jc-c\">\n            <p class=\"mbr-text mbr-fonts-style mbr-regular mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".copyright .mbr-text\" data-app-placeholder=\"Type Text\">© Copyright GO Salary Packaging Pty Ltd - Privacy - Need Help? Ask Amy<br></p>\n        </div>\n    </div>\n</section>",
           "_cid": "rFR1N9vZwS",
-          "_anchor": "footer3-k",
           "_protectedParams": [],
           "_global": true,
           "_once": "footer",
-          "_params": {}
+          "_params": {},
+          "_anchor": "footer3-o"
         }
       ]
     }
